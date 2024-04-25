@@ -1,0 +1,7 @@
+services:
+  flow:
+    image: flow
+    ports:
+      - "3000:3000"
+    volumes:
+      - "$PWD/config:/config"

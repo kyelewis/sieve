@@ -1,0 +1,17 @@
+{
+  "flows": [
+    {
+      "id": "default",
+      "flow": [
+        {
+          "id": "response",
+          "type": "plainTextResponse",
+          "input": {
+            "value": "<html><head><title>Hello!</title><body><h1>Hello, World!</h1></body></html>",
+            "contentType": "text/html"
+          }
+        }
+      ]
+    }
+  ],
+}

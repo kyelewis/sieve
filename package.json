@@ -1,0 +1,21 @@
+{
+  "name": "sieve",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "bun scripts/run.ts -- --config .config.json",
+    "docker-build": "docker build . -t ghcr.io/kyelewis/flow:latest",
+    "docker-login": " echo $GITHUB_PERSONAL_ACCESS_TOKEN | docker login ghcr.io -u kyelewis --password-stdin",
+    "docker-push": "docker push ghcr.io/kyelewis/flow:latest",
+    "format": "prettier --write .",
+    "test": "bun test"
+  },
+  "author": "Kye Lewis <kye@klewis.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "3.2.5"
+  },
+  "dependencies": {
+    "mustache": "4.2.0"
+  }
+}
